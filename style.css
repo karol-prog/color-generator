@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  height: 100vh;
+}
+
+button {
+  padding: 0.8em;
+  background: none;
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+}
+
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2em;
+}
+
+.input-color {
+  border: none;
+  height: 3.2em;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.color-select {
+  width: 50%;
+  padding: 0.75em;
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+}
+
+/* main */
+.grid-colors {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  justify-self: center;
+  margin-top: 2em;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.grid-colors-inner {
+  width: 100%;
+  justify-self: center;
+}
+
+.color {
+  height: 20rem;
+  cursor: pointer;
+}
+
+.hex-code {
+  text-align: center;
+  padding: 1em;
+  cursor: pointer;
+}
+
+/* detect theme of device */
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #222222;
+    color: #fff;
+  }
+}

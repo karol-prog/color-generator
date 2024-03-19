@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Color Generetor</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <input type="color" id="input-color" class="input-color" />
+
+        <select class="color-select" id="color-select">
+          <option value="monochrome">Monochrome</option>
+          <option value="monochrome-dark">Monochrome Dark</option>
+          <option value="monochrome-light">Monochrome Light</option>
+          <option value="analogic">Analogic</option>
+          <option value="complement">Complement</option>
+          <option value="analogic-complement">Analogic Complement</option>
+          <option value="triad">Triad</option>
+          <option value="quad">Quad</option>
+        </select>
+
+        <button id="get-color-btn">Get color scheme</button>
+      </header>
+
+      <main>
+        <div id="color-container" class="grid-colors">
+          <!-- content here -->
+        </div>
+      </main>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
